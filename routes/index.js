@@ -9,7 +9,10 @@ const like_data = require('../model/like');
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.send('respond with a resource');
+  res.render('login')
+});
+router.get('/registration', function (req, res, next) {
+  res.render('registration')
 });
 
 // router.post('/reg', async function (req, res) {
